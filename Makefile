@@ -14,6 +14,7 @@ build: generate
 release:
 	@echo "====> Build and release"
 	@go get github.com/goreleaser/goreleaser
+	@git reset --hard HEAD
 	@goreleaser
 .PHONY: release
 
