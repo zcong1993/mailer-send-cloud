@@ -20,7 +20,7 @@ func main() {
 		ApiKey:     os.Getenv("API_KEY"),
 		ApiUser:    os.Getenv("API_USER"),
 		Client:     http.Client{Timeout: time.Second * 5},
-		ApiAddress: "http://api.sendcloud.net/apiv2/mail/send",
+		ApiAddress: sender2.API_ADDRESS,
 	}
 
 	logger := client.NewDefaultLogger(10)

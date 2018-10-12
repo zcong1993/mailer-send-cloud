@@ -10,6 +10,8 @@ import (
 	"strings"
 )
 
+const API_ADDRESS = "http://api.sendcloud.net/apiv2/mail/send"
+
 type SendCloud struct {
 	ApiUser    string
 	ApiKey     string
