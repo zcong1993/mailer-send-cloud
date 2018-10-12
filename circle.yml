@@ -6,20 +6,20 @@ jobs:
     # CircleCI Go images available at: https://hub.docker.com/r/circleci/golang/
     - image: circleci/golang:1.11
 
-    working_directory: /mnt
+    working_directory: ~/project
 
     steps:
     - checkout
     - run:
         name: build
         command: make build
-        
+
   release:
     docker:
     # CircleCI Go images available at: https://hub.docker.com/r/circleci/golang/
     - image: circleci/golang:1.11
 
-    working_directory: /mnt
+    working_directory: ~/project
 
     steps:
     - checkout
